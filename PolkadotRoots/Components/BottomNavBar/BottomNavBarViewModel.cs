@@ -10,20 +10,20 @@ namespace PolkadotRoots.Components.BottomNavBar
         {
             Assets,
             Nfts,
-            Wud
+            DAO
         }
 
         [ObservableProperty]
         [NotifyPropertyChangedFor(nameof(AssetsIsSelected))]
         [NotifyPropertyChangedFor(nameof(NftsIsSelected))]
-        [NotifyPropertyChangedFor(nameof(WudIsSelected))]
+        [NotifyPropertyChangedFor(nameof(DAOIsSelected))]
         private NavBarSelection selected = NavBarSelection.Nfts;
 
         public bool AssetsIsSelected => Selected == NavBarSelection.Assets;
 
         public bool NftsIsSelected => Selected == NavBarSelection.Nfts;
 
-        public bool WudIsSelected => Selected == NavBarSelection.Wud;
+        public bool DAOIsSelected => Selected == NavBarSelection.DAO;
 
         [RelayCommand]
         public async Task SelectAssetsAsync()
@@ -52,16 +52,16 @@ namespace PolkadotRoots.Components.BottomNavBar
         }
 
         [RelayCommand]
-        public async Task SelectWudAsync()
+        public async Task SelectDAOAsync()
         {
-            if (WudIsSelected)
+            if (DAOIsSelected)
             {
                 return;
             }
 
-            Selected = NavBarSelection.Wud;
+            Selected = NavBarSelection.DAO;
 
-            await Shell.Current.GoToAsync("//Wud", animate: false);
+            await Shell.Current.GoToAsync("//DAOPage", animate: false);
         }
     }
 }

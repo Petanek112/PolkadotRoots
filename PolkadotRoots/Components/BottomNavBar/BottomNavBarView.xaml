@@ -31,11 +31,11 @@
         </local:NavBarButtonView>
         <local:NavBarButtonView
             Grid.Column="2"
-            Title="Play Wud"
-            IconUnselected="play.png"
-            IconSelected="play_active.png"
-            IsSelected="{Binding WudIsSelected}"
-            Command="{Binding SelectWudCommand}">
+            Title="DAO"
+            IconUnselected="daoicon.png"
+            IconSelected="daoicon_active.png"
+            IsSelected="{Binding DAOIsSelected}"
+            Command="{Binding SelectDAOCommand}">
         </local:NavBarButtonView>
     </local:PageBottomBarView>
 </ContentView>
