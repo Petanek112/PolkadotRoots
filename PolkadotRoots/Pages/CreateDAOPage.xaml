@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PolkadotRoots.Pages.DAOPage"
-             Title="DAOPage"
+             x:Class="PolkadotRoots.Pages.CreateDAOPage"
+             Title="CreateDAO"
              xmlns:txanalyzer="clr-namespace:PlutoFramework.Components.TransactionAnalyzer;assembly=PlutoFramework"
              xmlns:networkselect="clr-namespace:PlutoFramework.Components.NetworkSelect;assembly=PlutoFramework"
              xmlns:transferview="clr-namespace:PlutoFramework.Components.TransferView;assembly=PlutoFramework"
@@ -51,10 +51,10 @@
                     x:Name="stackLayout"
                     Spacing="15"
                     Padding="20, 15, 20, 100">
-                    <Label FontSize="40" Text="DAO Page" HorizontalTextAlignment="Center" FontAttributes="Bold"
+                    <Label FontSize="40" Text="Create DAO Page" HorizontalTextAlignment="Center" FontAttributes="Bold"
                            FontFamily="UnboundedBold"/>
 
-                    <components:DAOButtonsView />
+                    <!--components:DAOButtonsView /-->
 
                     <!--bohemia:BohemiaNftOwnedListView / Here Will be DAO-->
 
@@ -74,20 +74,6 @@
                 <TapGestureRecognizer Command="{Binding QrCommand}" />
             </Image.GestureRecognizers>
         </Image>
-
-        <!--Settings button-->
-        <Image WidthRequest="36" Margin="10, 10, 10, 10"
-           AbsoluteLayout.LayoutBounds="0, 0, AutoSize, AutoSize"
-            AbsoluteLayout.LayoutFlags="PositionProportional"
-            Source="{AppThemeBinding Light=settingsblack.png, Dark=settingswhite.png}"
-           >
-            <Image.GestureRecognizers>
-                <TapGestureRecognizer Command="{Binding SettingsCommand}" />
-
-            </Image.GestureRecognizers>
-        </Image>
-
-        <bottomnavbar:BottomNavBarView />
 
         <extrinsic:ExtrinsicStatusStackLayout />
 

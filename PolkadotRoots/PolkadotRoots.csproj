@@ -70,8 +70,14 @@
     <Compile Update="Components\BottomNavBar\NavBarButtonView.xaml.cs">
       <DependentUpon>NavBarButtonView.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Components\DAOButtonsView.xaml.cs">
+      <DependentUpon>DAOButtonsView.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Pages\AssetsPage.xaml.cs">
       <DependentUpon>AssetsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\CreateDAOPage.xaml.cs">
+      <DependentUpon>CreateDAOPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="Pages\DAOPage.xaml.cs">
       <DependentUpon>DAOPage.xaml</DependentUpon>
@@ -85,6 +91,9 @@
     <MauiXaml Update="Components\BottomNavBar\NavBarButtonView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </MauiXaml>
+    <MauiXaml Update="Components\DAOButtonsView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </MauiXaml>
     <MauiXaml Update="Components\ClaimNftButtonView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </MauiXaml>
@@ -95,6 +104,9 @@
       <Generator>MSBuild:Compile</Generator>
     </MauiXaml>
     <MauiXaml Update="OnboardingShell.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </MauiXaml>
+    <MauiXaml Update="Pages\CreateDAOPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </MauiXaml>
     <MauiXaml Update="Pages\DAOPage.xaml">
